@@ -4,17 +4,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-	$("import").click(function(){
-		$(".text").load("helloworld.txt");
+	$("button").click(function(){
+		$("#bodyText").load("helloworld.txt");
 	});
 });
 </head>
 <body>
-<div class="button">
-	<input type="button" id="import" value="import"/>
-</div>
-<div class="text">
-	vriska <br />
+<button>hi</button>
+<div id="bodyText">
+	<p>vriska</p>
 </div>
 </body>
 </html>
