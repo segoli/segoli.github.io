@@ -10,10 +10,12 @@
     </div>
 	<script>
     $(document).ready(function(){
-      var pagedata = window.location.hash;
+      var pagedata = window.location.pathname;
+      $('#page').load('/helloworld.txt');
 	  $.get(pagedata, function(data){
 	    $('#page').append(data);
 	  });
+	  $('#page').append(pagedata);
     });
     </script>
   </body>
