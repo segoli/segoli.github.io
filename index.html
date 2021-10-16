@@ -1,18 +1,21 @@
 <!doctype html>
 <html>
-  <head>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-	<script>
-    $(document).ready(function(){
-		var pagedata = window.location.hash;
-		$('#page').load('/helloworld.txt');
-		});
-    </script>
-    <title>
-    </title>
-    </head>
-  <body>
-    <div id="page">
-    </div>
-  </body>
+	<head>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					var pagedata = window.location.hash;
+					$('#page').load('/helloworld.txt');
+				});
+			});
+		</script>
+		<title>
+		</title>
+	</head>
+	<body>
+		<div id="page">
+		</div>
+		<button type="button">press this button to make Vriska appear</button>
+	</body>
 </html>
