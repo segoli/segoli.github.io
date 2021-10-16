@@ -4,9 +4,9 @@
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 		<script>
 			$(document).ready(function(){
-				$("button").click(function(){
+				$("a").click(function(){
 					var pagedata = window.location.hash;
-					$('#page').append('/helloworld.txt');
+					$('#page').load('/helloworld.txt');
 				});
 			});
 		</script>
@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div id="page">
+			<a href="#">click here for Vriska</a>
 		</div>
-		<button type="button">press this button to make Vriska appear</button>
 	</body>
 </html>
