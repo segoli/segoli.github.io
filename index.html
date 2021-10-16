@@ -10,7 +10,7 @@
     </div>
 	<script>
     $(document).ready(function(){
-      var pagedata = window.location.pathname;
+      var pagedata = window.location.hash;
 	  $.get(pagedata, function(data){
 	    $('#page').append(data);
 	  });
